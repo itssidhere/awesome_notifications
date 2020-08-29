@@ -38,6 +38,7 @@ public class FCMService extends FirebaseMessagingService {
     public void onCreate() {
         super.onCreate();
         applicationContext = getApplicationContext();
+        Log.d(TAG, "FCM received");
     }
 
     /// Called when a new token for the default Firebase project is generated.
@@ -54,7 +55,7 @@ public class FCMService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(final RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
-        Log.d(TAG, "FCM received");
+        
         if (remoteMessage.getData().size() == 0) return;
         Log.d(TAG, "FCM received");
 
