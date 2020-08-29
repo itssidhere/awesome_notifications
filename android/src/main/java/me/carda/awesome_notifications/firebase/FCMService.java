@@ -54,7 +54,7 @@ public class FCMService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(final RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
-
+        Log.d(TAG, "FCM received");
         if (remoteMessage.getData().size() == 0) return;
         Log.d(TAG, "FCM received");
 
