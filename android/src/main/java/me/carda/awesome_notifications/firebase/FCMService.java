@@ -38,7 +38,7 @@ public class FCMService extends FirebaseMessagingService {
     public void onCreate() {
         super.onCreate();
         applicationContext = getApplicationContext();
-        Log.d(TAG, "FCM received");
+        
     }
 
     /// Called when a new token for the default Firebase project is generated.
