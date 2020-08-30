@@ -215,11 +215,8 @@ public class NotificationBuilder {
     private void setImportance(NotificationChannelModel channel, NotificationCompat.Builder builder) {
         // Conversion to Priority
         int priorityValue = Math.min(Math.max(IntegerUtils.extractInteger(channel.importance) -2,-2),2);
-        System.out.println(channel.importance);
-        System.out.println(IntegerUtils.extractInteger(channel.importance));
-        System.out.println(priorityValue);
-        System.out.println("The end");
-        builder.setPriority(2);
+       
+        builder.setPriority(priorityValue);
         //builder.setImportance(priorityValue);
     }
 
