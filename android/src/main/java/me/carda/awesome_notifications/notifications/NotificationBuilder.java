@@ -19,7 +19,7 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.RemoteInput;
-import androidx.core.app.NotificationManager;
+
 
 import androidx.core.content.ContextCompat;
 import me.carda.awesome_notifications.AwesomeNotificationsPlugin;
@@ -216,8 +216,8 @@ public class NotificationBuilder {
     private void setImportance(NotificationChannelModel channel, NotificationCompat.Builder builder) {
         // Conversion to Priority
         // int priorityValue = Math.min(Math.max(IntegerUtils.extractInteger(channel.importance) -2,-2),2);
-        Log.d(NotificationManager.IMPORTANCE_HIGH);
-        builder.setImportance(NotificationManager.IMPORTANCE_HIGH);
+        Log.d(NotificationCompat.PRIORITY_HIGH);
+        builder.setImportance(NotificationCompat.PRIORITY_HIGH);
     }
 
     private void setOnlyAlertOnce(PushNotification pushNotification, NotificationChannelModel channel, NotificationCompat.Builder builder) {
