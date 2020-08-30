@@ -19,6 +19,7 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.RemoteInput;
+import androidx.core.app.NotificationManager;
 
 import androidx.core.content.ContextCompat;
 import me.carda.awesome_notifications.AwesomeNotificationsPlugin;
