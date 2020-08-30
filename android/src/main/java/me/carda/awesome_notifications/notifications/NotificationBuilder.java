@@ -218,6 +218,7 @@ public class NotificationBuilder {
         System.out.println(channel.importance);
         System.out.println(IntegerUtils.extractInteger(channel.importance));
         System.out.println(priorityValue);
+        System.out.println("The end");
         builder.setPriority(2);
         //builder.setImportance(priorityValue);
     }
