@@ -217,6 +217,7 @@ public class NotificationBuilder {
         int priorityValue = Math.min(Math.max(IntegerUtils.extractInteger(channel.importance) -2,-2),2);
         System.out.println(channel.importance);
         System.out.println(IntegerUtils.extractInteger(channel.importance));
+        System.out.println(priorityValue);
         builder.setPriority(2);
         //builder.setImportance(priorityValue);
     }
