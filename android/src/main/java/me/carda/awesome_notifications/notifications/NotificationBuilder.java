@@ -215,8 +215,8 @@ public class NotificationBuilder {
     private void setImportance(NotificationChannelModel channel, NotificationCompat.Builder builder) {
         // Conversion to Priority
         int priorityValue = Math.min(Math.max(IntegerUtils.extractInteger(channel.importance) -2,-2),2);
-        Log.d("SET IMP",Integer.toString(priorityValue));
-        builder.setImportance(priorityValue);
+        builder.setPriority(2);
+        //builder.setImportance(priorityValue);
     }
 
     private void setOnlyAlertOnce(PushNotification pushNotification, NotificationChannelModel channel, NotificationCompat.Builder builder) {
